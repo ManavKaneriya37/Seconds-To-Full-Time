@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@400;500&display=swap');
+
+
+*{
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+}
+html,body{
+      height: 100%;
+      width: 100%;
+      background-color: #d0d0d0;
+}
+.container{
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+.box{
+      position: relative;
+      height: initial;
+      width: 440px;
+      background-color: rgba(115,110,240,0.9);
+      border-radius: 7px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.box .inputfield{
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+.inputfield #second{
+      margin: 6px 0;
+      width: 50%;
+      height: 27px;
+      border: none;
+      outline: none;
+      background: rgba(255, 255, 255, 0.4);
+      font-size: 17px;
+      color: rgb(90,12,145);
+      font-weight: 600;
+      font-family: monospace;
+      padding: 0 6px;
+      border-bottom: 2px solid #dadada;
+}
+.inputfield button{
+      background-color: #ff42ac;
+      border: none;
+      outline: none;
+      margin: 12px 0;
+      font-size: 16px;
+      padding: 7px 0;
+      cursor: pointer;
+}
+.inputfield .result{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      opacity: 0;
+}
+.result #resultHead{
+      font-weight: 400;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #222;
+}
+.result #result{
+      margin: 12px 0;
+      height: initial;
+      width: 80%;
+      display: flex;
+      position: relative;
+      padding: 10px 6px;
+}
+#result .output{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.output p span{
+      display: flex;
+      margin: 4px 0;
+      flex-direction: column;
+      color: #ffff;
+      padding: 0px;
+      margin: 0 18px;
+      font-family: monospace;
+      align-items: center;
+      line-break: strict;
+}
+
+.output p{
+      display: flex;
+      align-items: center;
+      font-size: 17px;
+}
+.result.active{
+      opacity: 1;;
+}
